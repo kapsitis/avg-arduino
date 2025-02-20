@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'cpp01-datatypes'
+project = 'cpp03-arrays'
 copyright = '2024, NMS'
 author = 'NMS'
 

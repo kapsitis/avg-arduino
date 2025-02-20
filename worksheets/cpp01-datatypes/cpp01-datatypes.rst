@@ -3,9 +3,8 @@ C++ tipi un sintakse. Mirkšķināšana
 
 * Elektriskās ķēdes, virknes slēgums, Oma likums
 * Diodes, priekšējais spriegums, maksimālā strāva
-* Stringi, simboli, izvade uz seriālā 
-  veselie skaitļi un peldošā punkta skaitļi.
-* Drukāšana uz seriālā porta, datu pārraides ātrums.
+* Stringi, simboli, veselie skaitļi un peldošā punkta skaitļi
+* Drukāšana uz seriālā porta, bitu pārraides ātrums (*baud rate*, bps)
 
 
 
@@ -15,24 +14,23 @@ Mirkšķināšana
 
 
 
-Jautājums
-  Daži cilvēki ir jūtīgi pret signāllampiņu mirkšķināšanu 
-  noteiktās frekvencēs. Šādas frekvences mēdz būt starp :math:`3~\mathrm{Hz}`
-  :math:`30~\mathrm{Hz}` (īpaši problemātiskas ir :math:`15` līdz :math:`20` 
-  hercu frekvences). 
-  Kā jāizvēlas abi gaidīšanas laiki izsaukumos ``delay(milliseconds)``, lai 
-  panāktu šādu mirkšķināšanas frekvenci? 
 
 
 Ārējas diodes pievienošana
 ----------------------------
 
+Rezistoru krāsas. 
+https://www.blikai.com/blog/decoding-resistor-color-bands-a-beginner-s-guide
 
-.. |circuit01| image:: figs/circuit01.png
+
+https://www.blikai.com/blog/decoding-resistor-color-bands-a-beginner-s-guide
+
+
+.. |circuit01| image:: figs/circuit1.png
    :width: 400px
    :align: middle
 
-.. |circuit02| image:: figs/circuit02.png
+.. |circuit02| image:: figs/circuit2.png
    :width: 400px
    :align: middle
 
@@ -45,3 +43,11 @@ Jautājums
      - |circuit02|
 
 
+
+**Jautājums**
+  Daži cilvēki ir jūtīgi pret signāllampiņu mirkšķināšanu 
+  noteiktās frekvencēs. Šādas frekvences mēdz būt starp :math:`3~\mathrm{Hz}`
+  :math:`30~\mathrm{Hz}` (īpaši problemātiskas ir :math:`15` līdz :math:`20` 
+  hercu frekvences). 
+  Kā jāizvēlas abi gaidīšanas laiki izsaukumos ``delay(milliseconds)``, lai 
+  panāktu šādu mirkšķināšanas frekvenci? 

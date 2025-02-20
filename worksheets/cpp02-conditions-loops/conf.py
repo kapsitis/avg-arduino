@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'cpp01-datatypes'
+project = 'cpp02-conditions-loops'
 copyright = '2024, NMS'
 author = 'NMS'
 
