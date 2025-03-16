@@ -6,7 +6,7 @@ void setup(void) {
 
 void loop(void) {
     int valInt = analogRead(pinAnalog); 
-    double valU = 5./1024.* valInt;
+    double valU = valInt * 5. / 1024;
     Serial.print(valInt); 
     Serial.print(" "); 
     Serial.println(valU , 2); 
