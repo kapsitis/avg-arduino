@@ -94,21 +94,21 @@ divi savienotājvadi M-M (ar adatiņām abos galos).
 
 Šajā darbā scenārijs joprojām ir ``Blink.ino``, bet pievienosim ārēju diodi. 
 
-.. |practical2-circuit01| image:: figs/practical2-circuit1.png
+.. |practical2-circuit1_schem| image:: figs/practical2-circuit1_schem.png
    :width: 250px
    :align: middle
 
-.. |circuit02| image:: figs/circuit2.png
+.. |practical2-circuit1_bb| image:: figs/practical2-circuit1_bb.png
    :width: 250px
    :align: middle
 
 .. list-table:: 
-   :widths: 50 50
+   :widths: 30 70
    :align: center
    :header-rows: 0
 
-   * - |practical2-circuit01|
-     - |circuit02|
+   * - |practical2-circuit1_schem|
+     - |practical2-circuit1_bb|
 
 1. Atvienot Arduino kontrolieri no USB vada. 
    Saslēgt attēlā redzamo ķēdi. LED garāko kājiņu likt tuvāk plusam, īsāko -- tuvāk mīnusam. 
@@ -127,13 +127,24 @@ Praktiskais darbs #3: Potenciometrs (ReadingValues.ino)
 trīs vadiņi M-F (ar adatiņu vienā galā un kontaktligzdu otrā), 
 divi vadiņi M-M (ar adatiņām abos galos).
 
+.. |potentiometer_schem| image:: figs/potentiometer_schem.png
+   :width: 3in
+
+.. |potentiometer_bb| image:: figs/potentiometer_bb.png
+   :width: 3in
+
 
 1. Atvienot vadus no Arduino uz ārējo gaismas diodi LED.
    Ieslēgt potenciometru starp **GND** un **5V** (potenciometra **VCC**), izvadu 
    **OTA** savieno ar Arduino **A0**. 
 
-   .. figure:: figs/potentiometer.png
-      :width: 3in
+   .. list-table:: 
+      :widths: 30 70
+      :align: center
+      :header-rows: 0
+
+      * - |potentiometer_schem|
+        - |potentiometer_bb|
 
 2. Izveidot jaunu skriptu, saglabāt to kā ``ReadingValues.ino``
 
