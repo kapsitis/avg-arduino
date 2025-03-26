@@ -7,9 +7,77 @@
 </style>
 </head>
 
-<h1>Sveiks!</h1>
+<h1>2025-03-19</h1>
 
-<p>ABC</p>
+<p><b>Elektriskās ķēdes bez programmēšanas</b></p>
+
+<p>Divi iesildīšanās vingrinājumi, kas Arduino uztver kā strāvas avotu - neko neprogrammē, 
+    bet ieslēdz ķēdi starp GND (jeb 0V) un 5V
+</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/LED_and_Resistor">LED diodes un 220 Ω rezistora ķēde</a></li>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/Potentiometer">Maiņrezistors/reostats/potenciometrs</li>
+</ul>
+
+
+<p><b>Rakstīšana uz seriālā porta</b></p>
+
+<p>Lai programmētājs redzētu, kādas vērtības rodas uz Arduino kontaktiem, tās var 
+    drukāt uz Arduino IDE ekrāna vai attēlot kā grafiku.
+</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/ReadingValues">Potenciometra vērtību nolasīšana</a></li>
+</ul>
+
+<p>Mirkšķināšana</p>
+
+<p>Vienkāršākā Arduino programmaa "Blink" - ik pēc regulāra intervāla ieslēdz/izslēdz 13.kontaktu.
+    Ar to var mirkšķināt gan LED diodi uz plates (kura tieši saslēgta ar 13.kontaktu), gan 
+    arī ārēju diodi. 
+</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/ControllerAlone/Blink">Diodes mirkšķināšana uz Arduino plates</a></li>
+</ul>
+
+
+
+<h1>2025-03-26</h1>
+
+<p>Lampiņu ieslēgšana</p>
+
+<p>LED lampiņas var ieslēgt/izslēgt vai nu ar pogas nospiešanu, 
+    vai arī ar potenciometru (ja tas pieņem noteiktu vērtību).</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/LED_with_Buttons">Lampiņu ieslēgšana ar 4x4 podziņu paneli</a></li>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/EnablingBlinker">Lampiņas ieslēgšana ar potenciometru</a></li>
+</ul>
+
+<p>Servomotors</p>
+
+<p>Šis ir testa piemērs, kurš motoru griež vispirms uz vienu, tad uz otru pusi. 
+    Konkrētāki piemēri servomotora izmantošanai būs turpmākajos vingrinājumos.
+</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/SG90_9G_Micro_Servo/TurnForthAndBack">Motora griešana turp un atpakaļ</a></li>
+</ul>
+
+<p>Pulsa platuma modulācija</p>
+
+<p>Šajā piemērā potenciometra vērtību nolasa uz analogā kontakta A0 
+    ar nolūku ģenerēt citu signālu uz digitālā kontakta 9,
+    kas iespaido LED lampiņas spīdēšanu. Cerams, tā mainās vienmērīgāk nekā tad, ja 
+    spriegumu maina tieši ar potenciometru.</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/PulseWidthModulation">LED+potenciometra ķēdes pieslēgšana PWM</a></li>
+</ul>
+
+
 
 </html>
 

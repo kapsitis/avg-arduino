@@ -1,17 +1,21 @@
 #include <Servo.h>
 
-Servo myServo;  // Create a servo object
+Servo myServo;  // Servomotora objekts
 
 void setup() {
-  myServo.attach(9);  // Attach the servo to pin 9
+  myServo.attach(9);  // Griešanas komandas padod no 9.kontakta
 }
 
 void loop() {
-  for (int pos = 0; pos <= 180; pos += 1) { // Sweep from 0 to 180 degrees
-    myServo.write(pos);               // Set the servo position
-    delay(15);                        // Wait for the servo to reach the position
+  // Ciklā ātri maina "pos" vērtības no 0 līdz 180.
+  for (int pos = 0; pos <= 180; pos += 1) { 
+    // Uzstāda servomotora stāvokli
+    myServo.write(pos);
+    // Drusku paguļ, lai servomotors var aizkļūt līdz šim stāvoklim      
+    delay(15);                        
   }
-  for (int pos = 180; pos >= 0; pos -= 1) { // Sweep back from 180 to 0 degrees
+  // Maina vērtības no 180 atpakaļ līdz 0
+  for (int pos = 180; pos >= 0; pos -= 1) { 
     myServo.write(pos);               
     delay(15);
   }
