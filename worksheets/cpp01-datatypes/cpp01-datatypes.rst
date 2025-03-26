@@ -252,7 +252,7 @@ Uzdevumi
     dota zīmējumā. Ievērojam, ka šī shēma izmanto tikai **GND** un **5V** kontaktus 
     (Arduino plate ir parasts strāvas avots). Tāpēc LED spožumu var regulēt neatkarīgi no skripta.
 
-    Ievērojam, ka ķēdē bez potenciometra (mainīgas pretestības) ir arī :math:`220~\text{V}`
+    Ievērojam, ka ķēdē bez potenciometra (mainīgas pretestības) ir arī :math:`220~\text{\Omega}`
     fiksētā pretestība, lai pie jebkura potenciometra stāvokļa 
     LED nepārsniegtu maksimālo strāvas stiprumu. (Potenciometra izejā spriegums 
     var sasniegt :math:`5~\text{V}`.) 
