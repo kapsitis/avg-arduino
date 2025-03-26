@@ -10,6 +10,12 @@ tās ir jāsūta uz parasto datoru (jo pašam Arduino nav pieslēgts
 nekāds monitors). Parastākais risinājums ir tās sūtīt uz 
 seriālo portu. 
 
+**Tools > Serial Monitor** un **Tools > Serial Plot** 
+atvērs ekrānus, kuros ir redzamas vērtības. Piemēram, 
+
+![](SerialMonitor.png)
+
+
 Potenciometra vērtības, ko var aizsūtīt uz analogo 
 kontaktu (piemēram **A0**) ir skaitļi no 0 līdz 1023. 
 Tiem atbilst spriegumu vērtības no 0V līdz 5V. 
