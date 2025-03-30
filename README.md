@@ -2,6 +2,9 @@
 
 ĀVĢ Arduino projekti
 
+ĀVĢ Arduino projektu mājaslapu ar paskaidrojumiem par katru atsevišķo projektu sk. 
+[ĀVĢ Arduino projekti](https://ej.uz/avg-arduino). 
+
 C++ valodas zināšanas, kas var noderēt Arduino projektos. 
 
 1. **Pamatsintakse un datu tipi:**
