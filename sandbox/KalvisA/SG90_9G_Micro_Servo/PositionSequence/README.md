@@ -18,7 +18,7 @@ A. Sarkana diode norāda, ka motors griežas virzienā uz ``RIGHT_POS``
 B. Zaļa diode norāda, ka motors griežas virzienā uz ``LEFT_POS``
 C. Zila diode norāda, ka motors atgriežas neitrālajā stāvoklī jeb ``NEUTRAL_POS``. 
 
-Uz sarkano un zaļo diodi ir kopīgs $220~\text{\Omega}$ rezistors, 
+Uz sarkano un zaļo diodi ir kopīgs $220~\Omega$ rezistors, 
 bet zilajai diodei ir pašai savs. 
 
 Elektriskā shēma:
