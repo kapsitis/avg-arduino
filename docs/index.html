@@ -119,6 +119,8 @@
     
 <p><b>Pulsa platuma modulēšana (PWM - Pulse Width Modulation)</b></p>
 
+<p><img src="PWMpins.png" width="300px"/></p>
+
 <p>Arduino plate var nolasīt "analogu" signālu (piemēram, potenciometra vērtību - jebkuru 
     skaitli intervālā $[0;1023]$). Diemžēl, Arduino plate nevar izvadīt analogu signālu; 
     vienīgā iespēja ir ļoti ātri pārslēgt starp spriegumiem HIGH (5 volti) un LOW (0 volti). 
@@ -129,6 +131,12 @@
     Daudzām elektriskām iekārtām (diodēm, elektromotoriem) patīk saņemt šādu raustīgu 
     spriegumu. Diode var sākt spīdēt mazāk intensīvi. Motors var saņemt leņķi, par kuru pagriezties. 
 </p>
+
+<p>Šis attēls parāda, kā izskatās PWM izvade (kā diskrēts kontakts, kuram ir tikai 
+    divi stāvokļi HIGH un LOW var izvadīt analogu signālu (teiksim, jebkuru skaitli starp 0 un 255):</p>
+
+<p><img src="pwm.png" width="300px"/></p>
+
 
 <ul>
     <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/PWMwithGammaCorrection">LED diode, kas izdziest (ar Gamma korekciju)</a></li>

@@ -1,5 +1,4 @@
-// const byte segmentPins[] = {2, 3, 4, 5, 6, 7, 8, 9};
-    //                      A, B, C, D, E, F, G, DP   
+    //                         A, B, C, D, E, F, G, DP   
     const byte segmentPins[] = {4, 5, 7, 8, 9, 3, 2, 6};
 
     const byte numbers[16][8] = {

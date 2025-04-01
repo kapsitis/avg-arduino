@@ -13,10 +13,16 @@ atsevišķus posmus, var attēlot visādus ciparus apmēram tāpat kā kalkulato
 
 Visām diodēm ir kopīgs "katods" jeb diodes īsākā kājiņa, kura atrodas pretī 
 simbolam "-" -- tā atbilst vidējai kājiņai gan augšējā, gan apakšējā 5 kontaktu rindā. 
-Tā jāpieslēdz pie (visām diodēm kopīgas) $220~\text{\Omega}$ 
-pretestības un tālāk -- pie Arduino **GND** kontakta.
+
 
 Kopīgā katoda displeju attēlo šāda elektriskā shēma:
 
 ![](common_cathode.png)
+
+Tā kā arī LED displeja diodēm ir ieteicams 2 voltu sprieguma kritums un 20 miliampēru 
+strāvas stiprums, tad shēmai jāpieslēdz rezistors. Šis rezistors ir kopīgs 
+visam ciparam; tā elektriskā pretestība ir $220~\Omega$ 
+un tālāk tas pieslēgts pie **GND** kontakta. (Teorētiski varētu arī pieslēgt pretestības 
+arī otrā pusē - pie visām LED diožu kājiņām, bet tad vajadzētu astoņas pretestības.)
+
 
