@@ -42,8 +42,8 @@
       
       for (unsigned int k = 0; k < 100; k++) {
         for (int aa = 0; aa < 250; aa++) {
-          displayNumber(k / 10, 12);
-          displayNumber(k % 10, 13);
+          displayNumber(k % 10, 12);
+          displayNumber(k / 10, 13);
         }
         // delay(1000);
       }
