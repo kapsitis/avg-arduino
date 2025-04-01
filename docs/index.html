@@ -49,7 +49,7 @@
 
 <p><b>Lampiņu ieslēgšana</b></p>
 
-<p>LED lampiņas var ieslēgt/izslēgt vai nu ar pogas nospiešanu, 
+<p>LED lampiņas var ieslēgt/izslēgt vai nu ar pogu 
     vai arī ar potenciometru (ja tas pieņem noteiktu vērtību).</p>
 
 <ul>
@@ -80,6 +80,76 @@
     <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/PulseWidthModulation">LED+potenciometra ķēdes pieslēgšana PWM</a></li>
 </ul>
 
+
+
+<h1>2025-04-02</h1>
+
+<p><b>7 posmu LED displejs</b></p>
+
+<p>Elektroniskas ierīces bieži rāda ugunīgus cipariņus. Vienkāršs displeja veids ir 
+    7 posmu LED displejs, kurā no 7 gaismas diodēm izveidots "astoņnieks", kurā ieslēdzot 
+    vai izslēdzot dažus posmus var uzzīmēt visus ciparus no 0 līdz 9. 
+    Mūsu komplektā ir LED displeji, kuriem ir "kopīgais katods" (*common cathode*), 
+    t.i. vidējās kājiņas augšā un apakšā pārstāv "zemi" jeb katodu jeb **GND** kontaktu. 
+    Visas pārējās kājiņas pieslēdzas katram no 7 posmiņiem (ir vēl arī astotais posmiņš, 
+    kas ir "DP" - "decimālais punkts"). Vienam LED cipariņam pietiek ar vienu rezistoru,
+    kuru loģiski uzlikt uz katoda, jo visa strāva plūst caur šo katodu. 
+</p>
+
+<ul>
+<li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/LedDisplay5161AS/DisplayDigitPlain">Viens LED displeja cipars</a></li>
+</ul>
+
+
+<p><b>Multipleksēšana</b></p>
+
+<p>Iepriekšējā piemērā redzējām, ka viens LED cipariņš aizņem 8+1=9 kontaktus no 
+    Arduino plates. Divu cipariņu attēlošana prasītu jau 9+9 = 18 kontaktus. 
+    Bet Arduino platei nemaz nav tik daudz kontaktu. 
+    Lai zīmētu skaitlīšus uz diviem LED cipariņiem, jāizmanto triks, ko sauc 
+    par "multipleksēšanu". T.i. Arduino kontrolieris ļoti ātri pārslēdzas 
+    starp abiem cipariņiem - reizēm viņš zīmē vienu cipariņu, reizēm - otru. 
+    Pārslēgšanās starplaikos cilvēks nepamana, ka attiecīgais cipariņš tiek atslēgts, 
+    jo katram cipariņam ļoti bieži sūta atjauninājumus.
+</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/LedDisplay5161AS/MultiplexingDisplays">Divi (multipleksēti) LED displeja cipari</a></li>
+</ul>
+    
+<p><b>Pulsa platuma modulēšana (PWM - Pulse Width Modulation)</b></p>
+
+<p>Arduino plate var nolasīt "analogu" signālu (piemēram, potenciometra vērtību - jebkuru 
+    skaitli intervālā $[0;1023]$). Diemžēl, Arduino plate nevar izvadīt analogu signālu; 
+    vienīgā iespēja ir ļoti ātri pārslēgt starp spriegumiem HIGH (5 volti) un LOW (0 volti). 
+    Uz plates neeksistē nekāds "digitālais-uz-analogo" pārveidotājs. 
+
+    Tie kontakti, kuri spēj ļoti strauji raustīt spriegumu, ir 3., 5., 6., 9., 10., 11. kontakts. 
+    (Tie ir apzīmēti ar mazu vilnīti uz Arduino plates.)
+    Daudzām elektriskām iekārtām (diodēm, elektromotoriem) patīk saņemt šādu raustīgu 
+    spriegumu. Diode var sākt spīdēt mazāk intensīvi. Motors var saņemt leņķi, par kuru pagriezties. 
+</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/PWMwithGammaCorrection">LED diode, kas izdziest (ar Gamma korekciju)</a></li>
+</ul>
+    
+<p><b>Motora grozīšana</b></p>
+
+<p>Panākt, lai servo motors dara to, ko vajag, nav ļoti vienkārši. Tas saprot komandas, ko 
+    padod no kāds no PWM kontaktiem (3., 5., 6., 9., 10., 11. kontakts jeb "pin"). 
+    Atļautās komandas ir veseli skaitļi intervālā $[0;180]$. "Neitrālais" stāvoklis ir $90$, 
+    visi leņķi, kas mazāki par $90$ ir motors pagriezies par kaut kādu leņķi 
+    pretēji pulksteņa rādītājiem; leņķi, kas lielāki par $90$ ir motors pagriezies par 
+    leņķi pulksteņa rādītāju virzienā. Lai labāk saprastu, kas tur notiek, 
+    piedāvājam uzdevumu, kurš groza servo motoru (līdzīgi kā robotu mašīnītes stūri) 
+    par 10 grādiem uz vienu un otru pusi. Un attēlo ar diodes gaismiņu, kurš no 
+    griezieniem pašlaik notiek. 
+</p>
+
+<ul>
+    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/SG90_9G_Micro_Servo/PositionSequence">Motora griešana ar gaismiņām</a></li>
+</ul>
 
 
 </html>

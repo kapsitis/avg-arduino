@@ -8,3 +8,10 @@ cits kontakts (kontakts **13**).
 Ja potenciometra vērtība ir zemāka, tad diodi izslēdz. 
 
 ![](EnablingBlinker_bb.png)
+
+## Papildu vingrinājums
+
+Ieslēgt ķēdē dažādu krāsu diodes un noskaidrot, kādā potenciometra stāvoklī 
+tās (kaut vai ļoti blāvi) iedegas. 
+Pēc teorijas vajadzētu būt tā, ka sarkanās diodes iedegas pie viszemākā sprieguma, 
+bet zilās diodes - pie vislielākā sprieguma. 

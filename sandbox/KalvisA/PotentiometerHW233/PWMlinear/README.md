@@ -1,4 +1,4 @@
-# Pulsa platuma modulācija
+# Pulsa platuma modulācija (PWM)
 
 LED+rezistora ķēdi var regulēt ar potenciometru - mainot spriegumu no 0V līdz 5V. 
     Ja to dara pavisam bez strāvas pārveidošanas, tad aptuveni robežās no 0V līdz 1.25V 
@@ -10,4 +10,4 @@ LED+rezistora ķēdi var regulēt ar potenciometru - mainot spriegumu no 0V līd
     Tā kā šie kontakti ir digitālie, uz tiem var rakstīt jebkuru vērtību no 0 līdz 255, 
     bet tie vienkārši "lēkā" starp 0V un 5V spriegumiem. 
 
-![](PulseWidthModulation_bb.png)
+![](PWMlinear_bb.png)
