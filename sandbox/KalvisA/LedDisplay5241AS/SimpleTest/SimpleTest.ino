@@ -1,6 +1,6 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
-#include <Adafruit_AlphaNum4.h>
+#include <Adafruit_LEDBackpack.h>
 
 // Create display object (address from your I2C scan!)
 Adafruit_AlphaNum4 alpha4 = Adafruit_AlphaNum4();
