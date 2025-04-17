@@ -24,3 +24,14 @@ podziņas **S1** un **S6** ir nospiestas.
 
 
 **Šim praktiskajam darbam nav nepieciešams augšupielādēt programmu no Arduino IDE. Vajadzīgs jebkāds 5V strāvas avots. Kā strāvas avotu var izmantot Arduino kontaktus "GND" un "5V".**
+
+
+
+## Vingrinājuma varianti
+
+1. Vai NAND ķēdes izvadi var izmantot tikai LED lampiņas iedegšanai, 
+   vai arī tā var kļūt par ievadi citās Būla ķēdēs? 
+   Piemēram, vai var uzbūvēt parasto AND ķēdi, izmantojot 
+   NAND ķēdi un NOT ķēdi un šādu formulu: 
+
+   $$\overline{(A \uparrow B)} = A \land B.$$
