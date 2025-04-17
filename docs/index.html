@@ -2,10 +2,7 @@
 <head>
 <title>Kaut kas</title>
 <meta http-equiv="Content-type" content="text/html; encoding=UTF-8"/>
-<style>
-    body { margin: 5%; font-family: sans-serif; }
-    h1, h2, h3 { font-weight: normal; }
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <h1>Arduino shēmas un programmēšana</h1>
@@ -20,7 +17,7 @@ savienotājvadi (<i>jumper wires</i>) - apmēram 20 M-M un apmēram 20 M-F vadi)
 Katrā nodarbībā kastītes saturam pievienojas jaunas detaļas - dažādi 
 ievades un izvades moduļi.</p>
 
-<table border="1" cellspacing="0">
+<table border="1" cellspacing="0" width="80%">
     <tr>
         <th>Nodarbība</th>
         <th>Kas no jauna tiek pievienots</th>
@@ -28,14 +25,14 @@ ievades un izvades moduļi.</p>
     <tr>
         <td>1.nodarbība</td>
         <td>Trauciņš diodēm un pretestībām. 
-            Dažādu krāsu LED diodes (6 krāsas, pa 4 no katras krāsas); pieci $220~\Omega$ 
-            rezistori (savā sākotnējā gaišzilajā krāsā); 1 potenciometrs ar slīdošu 
-            regulatoru. 
+            Dažādu krāsu LED diodes (6 krāsas, pa 4 no katras krāsas); pieci 
+            220 Ω (220 omu) 
+            rezistori (gaiši zili); 1 potenciometrs. 
         </td>
     </tr>
     <tr>
         <td>2.nodarbība</td>
-        <td>Servo motors</td>
+        <td>Servo motors. 4x4 podziņu matrica.</td>
     </tr>
     <tr>
         <td>3.nodarbība</td>
@@ -45,14 +42,15 @@ ievades un izvades moduļi.</p>
     <tr>
         <td>4.nodarbība</td>
         <td>Trauciņš tranzistoriem un lielajām pretestībām. 
-            Pieci 2N3904 npn-tranzistori, piecas $1~k\Omega$ pretestības (nokrāsotas sarkanas), 
-            piecas $10~\Omega$ pretestības (nokrāsotas melnas). 
+            Pieci 2N3904 npn-tranzistori, pieci 1 kΩ (1 kilooma) 
+            rezistori (nokrāsoti sarkani), 
+            pieci 10 kΩ rezistori (nokrāsoti melni). 
         </td>
     </tr>
     <tr>
         <td>5.nodarbība</td>
-        <td>Divi $10~\mu{}F$ (10 mikrofaradu) kondensatori (<i>capacitors</i>), 
-        divi $100~\mu{}F$ (100 mikrofaradu) kondensatori. Viens pasīvais dūcējs 
+        <td>Divi 10 μF (10 mikrofaradu) kondensatori (<i>capacitors</i>), 
+        divi 100 μF (100 mikrofaradu) kondensatori. Viens pasīvais dūcējs 
         (<i>passive buzzer</i>).</td>
     </tr>
     <tr>
@@ -77,7 +75,7 @@ ievades un izvades moduļi.</p>
         <td>
             <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/LED_and_Resistor">LED diodes un $220~\Omega$ rezistora ķēde</a>
         </td>
-        <td>Oma likums, diodes sprieguma kritums un strāvas stiprums.</td>
+        <td>Oma likums, LED diodes, rezistoru virknes un paralēlais slēgums</td>
         <td>Līdzstrāvas ķēde bez C++ programmas.</td>
     </tr>
     <tr>
@@ -85,7 +83,7 @@ ievades un izvades moduļi.</p>
         <td>
             <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/Potentiometer">Maiņrezistors/reostats/potenciometrs</a>
         </td>
-        <td>Sprieguma mainīšana ar potenciometru.</td>
+        <td>Spriegums ķēdēs ar potenciometru; pretestība ar potenciometru.</td>
         <td>Līdzstrāvas ķēde bez C++ programmas.</td>
     </tr>
     <tr>

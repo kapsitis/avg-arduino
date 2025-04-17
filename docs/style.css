@@ -1,0 +1,17 @@
+body { 
+    margin: 5%; font-family: sans-serif; 
+}
+
+h1, h2, h3 { 
+    font-weight: normal; 
+}
+
+table {
+    border: 1px solid black;
+    width: 80%;
+}
+
+table th {
+    background-color: #cccccc;
+}
+
