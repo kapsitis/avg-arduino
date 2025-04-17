@@ -27,6 +27,12 @@ pa diagonāli. Maketēšanas plaknes zīmējumā parādīts, ka oranžajai LED l
 atbilst kontakti **R1**, **C1**; zaļajai LED lampiņai kontakti **R2**, **C2**; 
 zilajai LED lampiņai kontakti **R3**, **C3**. 
 
+Elektriskā shēma: 
+
+![](ReactionMeasurement_schem.png)
+
+Maketēšanas shēma:
+
 ![](ReactionMeasurement_bb.png)
 
 Lai būtu vieglāk orientēties, kad iedegta lampiņa, var ieslēgt 
@@ -36,3 +42,9 @@ Mūsu programmā tā pievienojama pie Arduino 8.kontakta.
 Tā kā dūcējs ir ļoti skaļš, tad starp 8.kontaktu un dūcēja I/O kontaktu
 ievietotas 3 ļoti lielas pretestības (pa 10 kiloomiem katra). Tās ir melnās
 pretestības no mazā trauciņa.
+
+## Vingrinājuma varianti
+
+1. Vai iespējams Arduino scenārijā iztikt bez "INPUT_PULLUP" 
+   (kontaktus 5., 6., 7. vienkārši deklarēt par "INPUT")? 
+   Kas būtu jāmaina elektriskajā shēmā?
