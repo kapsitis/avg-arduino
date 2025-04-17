@@ -8,40 +8,107 @@
 </style>
 </head>
 
-<h1>2025-03-19</h1>
-
-<p><b>Elektriskās ķēdes bez programmēšanas</b></p>
-
-<p>Divi iesildīšanās vingrinājumi, kas Arduino uztver kā strāvas avotu - neko neprogrammē, 
-    bet ieslēdz ķēdi starp GND (jeb 0V) un 5V
-</p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/LED_and_Resistor">LED diodes un 220 Ω rezistora ķēde</a></li>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/Potentiometer">Maiņrezistors/reostats/potenciometrs</a></li>
-</ul>
+<h1>Arduino shēmas un programmēšana</h1>
 
 
-<p><b>Rakstīšana uz seriālā porta</b></p>
+<p>Kursā izmantoti Windows 11 datori, uz kuriem uzstādīts Arduino IDE 
+    un seriālā porta draiveri. Katram kursa dalībniekam ir kastite, kurā ir
+Arduino Uno (R3) plate (<i>Arduino board</i>), 
+maketēšanas plate (</i>breadboard</i>) un vadi (10 vai 20 cm gari vadi; 
+parasti nepieciešami Male-Male un arī Male-Female 
+savienotājvadi (<i>jumper wires</i>) - apmēram 20 M-M un apmēram 20 M-F vadi).
+Katrā nodarbībā kastītes saturam pievienojas jaunas detaļas - dažādi 
+ievades un izvades moduļi.</p>
 
-<p>Lai programmētājs redzētu, kādas vērtības rodas uz Arduino kontaktiem, tās var 
-    drukāt uz Arduino IDE ekrāna vai attēlot kā grafiku.
-</p>
+<table border="1" cellspacing="0">
+    <tr>
+        <th>Nodarbība</th>
+        <th>Kas no jauna tiek pievienots</th>
+    </tr>
+    <tr>
+        <td>1.nodarbība</td>
+        <td>Trauciņš diodēm un pretestībām. 
+            Dažādu krāsu LED diodes (6 krāsas, pa 4 no katras krāsas); pieci $220~\Omega$ 
+            rezistori (savā sākotnējā gaišzilajā krāsā); 1 potenciometrs ar slīdošu 
+            regulatoru. 
+        </td>
+    </tr>
+    <tr>
+        <td>2.nodarbība</td>
+        <td>Servo motors</td>
+    </tr>
+    <tr>
+        <td>3.nodarbība</td>
+        <td>Divi 7 posmu LED displeji (divi cipariņi "8", kas var izvadīt jebkuru 
+            ciparu, decimālpunktu un dažus citus simbolus).</td>
+    </tr>
+    <tr>
+        <td>4.nodarbība</td>
+        <td>Trauciņš tranzistoriem un lielajām pretestībām. 
+            Pieci 2N3904 npn-tranzistori, piecas $1~k\Omega$ pretestības (nokrāsotas sarkanas), 
+            piecas $10~\Omega$ pretestības (nokrāsotas melnas). 
+        </td>
+    </tr>
+    <tr>
+        <td>5.nodarbība</td>
+        <td>Divi $10~\mu{}F$ (10 mikrofaradu) kondensatori (<i>capacitors</i>), 
+        divi $100~\mu{}F$ (100 mikrofaradu) kondensatori. Viens pasīvais dūcējs 
+        (<i>passive buzzer</i>).</td>
+    </tr>
+    <tr>
+        <td>6.nodarbība</td>
+        <td>Kursorsvira (<i>joystick</i>), 8x8 gaismas diožu matrica, 
+        I2C LED displejs.</td>
+    </tr>
+</table>
 
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/ReadingValues">Potenciometra vērtību nolasīšana</a></li>
-</ul>
 
-<p><b>Mirkšķināšana</b></p>
+<h2>Projektu saraksts</h2>
 
-<p>Vienkāršākā Arduino programmaa "Blink" - ik pēc regulāra intervāla ieslēdz/izslēdz 13.kontaktu.
-    Ar to var mirkšķināt gan LED diodi uz plates (kura tieši saslēgta ar 13.kontaktu), gan 
-    arī ārēju diodi. 
-</p>
+<table border="1" cellspacing="0">
+    <tr>
+        <th>Nodarbība</th>
+        <th>Projekta nosaukums</th>
+        <th>Elektrotehnikas un fizikas tēmas</th>
+        <th>Programmēšanas un matemātikas tēmas</th>
+    </tr>
+    <tr>
+        <td>1.nodarbība<br/>2025-03-19</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/LED_and_Resistor">LED diodes un $220~\Omega$ rezistora ķēde</a>
+        </td>
+        <td>Oma likums, diodes sprieguma kritums un strāvas stiprums.</td>
+        <td>Līdzstrāvas ķēde bez C++ programmas.</td>
+    </tr>
+    <tr>
+        <td>1.nodarbība<br/>2025-03-19</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/Potentiometer">Maiņrezistors/reostats/potenciometrs</a>
+        </td>
+        <td>Sprieguma mainīšana ar potenciometru.</td>
+        <td>Līdzstrāvas ķēde bez C++ programmas.</td>
+    </tr>
+    <tr>
+        <td>1.nodarbība<br/>2025-03-19</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/ReadingValues">Potenciometra vērtību nolasīšana</a>
+        </td>
+        <td>Nav</td>
+        <td>Rakstīšana uz seriālā porta, 
+            seriālais monitors (<i>serial monitor</i>) un seriālais zīmētājs 
+            (<i>serial plotter</i>) Arduino IDE</td>
+    </tr>
+    <tr>
+        <td>1.nodarbība<br/>2025-03-19</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/ControllerAlone/Blink">Diodes mirkšķināšana uz Arduino plates</a>
+        </td>
+        <td>Nav</td>
+        <td>Gaidīšanas komanda <tt>delay(ms)</tt></td>
+    </tr>
+</table>
 
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/ControllerAlone/Blink">Diodes mirkšķināšana uz Arduino plates</a></li>
-</ul>
+
 
 
 

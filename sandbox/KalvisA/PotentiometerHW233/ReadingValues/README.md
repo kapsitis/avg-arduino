@@ -9,6 +9,8 @@ Lai saprastu, kādas vērtības Arduino faktiski nolasīja,
 tās ir jāsūta uz parasto datoru (jo pašam Arduino nav pieslēgts 
 nekāds monitors). Parastākais risinājums ir tās sūtīt uz 
 seriālo portu. 
+Tās var drukāt uz Arduino IDE ekrāna vai attēlot kā grafiku.
+
 
 **Tools > Serial Monitor** un **Tools > Serial Plot** 
 atvērs ekrānus, kuros ir redzamas vērtības. Piemēram, 
