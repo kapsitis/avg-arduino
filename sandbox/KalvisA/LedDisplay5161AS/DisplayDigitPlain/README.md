@@ -7,29 +7,35 @@
   </tr>
 </table>
 
-LED displeju veido vairākas gaismas diodes. Ir populāri 7 posmu displeji, 
-kuros segmenti izkārtoti kā cipars "astoņi" un, ieslēdzot vai izslēdzot 
-atsevišķus posmus, var attēlot visādus ciparus apmēram tāpat kā kalkulatora ekrānā.
 
-Visām diodēm ir kopīgs "katods" jeb diodes īsākā kājiņa, kura atrodas pretī 
-simbolam "-" -- tā atbilst vidējai kājiņai gan augšējā, gan apakšējā 5 kontaktu rindā. 
+Elektroniskas ierīces mēdz izvadīt ugunīgus cipariņus. Vienkāršs displejs ir 
+no 7 gaismas diodēm izveidots "astoņnieks", kurā ieslēdzot 
+vai izslēdzot dažus posmus var uzzīmēt visus ciparus no 0 līdz 9 apmēram kā kalkulatora 
+ekrānā. 
 
+Mūsu komplektā ir LED displeji, kuriem ir "kopīgais katods" (*common cathode*), 
+t.i. vidējās kājiņas augšā un apakšā ir katods jeb **GND** kontakts. 
+Attēlā to attēlo kā **GND** vai vai arī kā mīnusu.
+Pārējās kājiņas pieslēdzas katram no 7 posmiņiem, kuras veido cipara 
+ģeometrisko izskatu (un vēl arī viena kājiņa, kas nosaka "DP" - "decimālo punktu"). 
+
+Visām LED diodēm displejā ir spēkā apmēram tie paši ierobežojumi 
+(2 voltu sprieguma kritums un 20 miliampēru strāvas stiprums),
+kas ir atsevišķajām krāsainajām LED-F5 diodēm. Tādēļ nepieciešams $220~\Omega$
+vai līdzīgs rezistors. To loģiski uzlikt uz katoda, jo visa strāva plūst caur šo katodu.
+(Teorētiski varētu arī pieslēgt pretestības 
+arī otrā pusē - pie visām LED diožu kājiņām, bet tad vajadzētu astoņas 
+$220~\Omega$ pretestības.)
 
 Kopīgā katoda displeju attēlo šāda elektriskā shēma:
 
 ![](common_cathode.png)
 
-Tā kā arī LED displeja diodēm ir ieteicams 2 voltu sprieguma kritums un 20 miliampēru 
-strāvas stiprums, tad shēmai jāpieslēdz rezistors. Šis rezistors ir kopīgs 
-visam ciparam; tā elektriskā pretestība ir $220~\Omega$ 
-un tālāk tas pieslēgts pie **GND** kontakta. (Teorētiski varētu arī pieslēgt pretestības 
-arī otrā pusē - pie visām LED diožu kājiņām, bet tad vajadzētu astoņas pretestības.)
-
-Elektriskā shēma izskatās šādi:
+Elektriskā shēma:
 
 ![](DisplayDigitPlain_schem.png)
 
-Maketēšanas plates attēls izskatās šādi: 
+Maketēšanas shēma:
 
 ![](DisplayDigitPlain_bb.png)
 

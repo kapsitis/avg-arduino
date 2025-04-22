@@ -7,9 +7,10 @@
 
 <h1>Arduino shēmas un programmēšana</h1>
 
+<p>Kurss ir piemērots 7.-8.klases ĀVĢ skolēniem </p>
 
 <p>Kursā izmantoti Windows 11 datori, uz kuriem uzstādīts Arduino IDE 
-    un seriālā porta draiveri. Katram kursa dalībniekam ir kastite, kurā ir
+un seriālā porta draiveri. Katram kursa dalībniekam ir kastite, kurā ir
 Arduino Uno (R3) plate (<i>Arduino board</i>), 
 maketēšanas plate (</i>breadboard</i>) un vadi (10 vai 20 cm gari vadi; 
 parasti nepieciešami Male-Male un arī Male-Female 
@@ -71,23 +72,23 @@ ievades un izvades moduļi.</p>
         <th>Programmēšanas un matemātikas tēmas</th>
     </tr>
     <tr>
-        <td>1.nodarbība<br/>2025-03-19</td>
+        <td>1.nodarbība</td>
         <td>
             <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/LED_and_Resistor">LED diodes un $220~\Omega$ rezistora ķēde</a>
         </td>
-        <td>Oma likums, LED diodes, rezistoru virknes un paralēlais slēgums</td>
-        <td>Līdzstrāvas ķēde bez C++ programmas.</td>
+        <td>Oma likums, ierobežojoši rezistori</td>
+        <td>Nav C++ koda</td>
     </tr>
     <tr>
-        <td>1.nodarbība<br/>2025-03-19</td>
+        <td>1.nodarbība</td>
         <td>
-            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/Potentiometer">Maiņrezistors/reostats/potenciometrs</a>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PlainCircuits/Potentiometer">Potenciometrs LED diodes ķēdē</a>
         </td>
-        <td>Spriegums ķēdēs ar potenciometru; pretestība ar potenciometru.</td>
-        <td>Līdzstrāvas ķēde bez C++ programmas.</td>
+        <td>Spriegums un pretestība potenciometram</td>
+        <td>Nav C++ koda</td>
     </tr>
     <tr>
-        <td>1.nodarbība<br/>2025-03-19</td>
+        <td>1.nodarbība</td>
         <td>
             <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/ReadingValues">Potenciometra vērtību nolasīšana</a>
         </td>
@@ -97,89 +98,79 @@ ievades un izvades moduļi.</p>
             (<i>serial plotter</i>) Arduino IDE</td>
     </tr>
     <tr>
-        <td>1.nodarbība<br/>2025-03-19</td>
+        <td>1.nodarbība</td>
         <td>
             <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/ControllerAlone/Blink">Diodes mirkšķināšana uz Arduino plates</a>
         </td>
         <td>Nav</td>
         <td>Gaidīšanas komanda <tt>delay(ms)</tt></td>
     </tr>
+
+    <tr>
+        <td>2.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/EnablingBlinker">Lampiņas ieslēgšana ar potenciometru</a>
+        </td>
+        <td>Nav</td>
+        <td>Programmas zarošanās ar <tt>if-else</tt>; intervāla [0;1023] dalīšana daļās</td>
+    </tr>
+
+    <tr>
+        <td>2.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/16ButtonKeypad/TurningOnLeds">Lampiņu ieslēgšana ar 4x4 podziņu paneli</a>
+        </td>
+        <td>Elektrisko slēdžu izvietojums 4x4 panelī</td>
+        <td>Matricas rindiņas un kolonnas</td>
+    </tr>
+
+    <tr>
+        <td>2.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/16ButtonKeypad/DisplayButton">Nospiestās pogas izvade seriālajā monitorā.</a>
+        </td>
+        <td>Pull-up rezistori</td>
+        <td>Pilnās pārlases algoritms</td>
+    </tr>
+
+    <tr>
+        <td>2.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/SG90_9G_Micro_Servo/TurnForthAndBack">Motora griešana turp un atpakaļ</a>
+        </td>
+        <td>Pulsa platuma modulācija (PWM), lai nosūtītu motora griešanās ātrumu</td>
+        <td>Nav</td>
+    </tr>
+
+    <tr>
+        <td>3.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/LedDisplay5161AS/DisplayDigitPlain">Viens LED displeja cipars</a>
+        </td>
+        <td>Diodes ar kopīgo katodu</td>
+        <td>Divdimensiju masīvi LED displeja ciparu attēlošanai</td>
+    </tr>
+
+    <tr>
+        <td>3.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/LedDisplay5161AS/MultiplexingDisplays">Divi (multipleksēti) LED displeja cipari</a>
+        </td>
+        <td>Multipleksēšana</td>
+        <td>Veselo skaitļu dalīšana un atlikumi</td>
+    </tr>
+
 </table>
 
 
 
 
 
-<h1>2025-03-26</h1>
-
-<p><b>Lampiņu ieslēgšana</b></p>
-
-<p>LED lampiņas var ieslēgt/izslēgt vai nu ar pogu 
-    vai arī ar potenciometru (ja tas pieņem noteiktu vērtību).</p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/EnablingBlinker">Lampiņas ieslēgšana ar potenciometru</a></li>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/16ButtonKeypad/TurningOnLeds">Lampiņu ieslēgšana ar 4x4 podziņu paneli</a></li>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/16ButtonKeypad/DisplayButton">Nospiestās pogas izvade seriālajā monitorā.</a></li>
-
-</ul>
-
-<p><b>Servomotors</b></p>
-
-<p>Šis ir testa piemērs, kurš motoru griež vispirms uz vienu, tad uz otru pusi. 
-    Konkrētāki piemēri servomotora izmantošanai būs turpmākajos vingrinājumos.
-</p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/SG90_9G_Micro_Servo/TurnForthAndBack">Motora griešana turp un atpakaļ</a></li>
-</ul>
-
-<p><b>Pulsa platuma modulācija</b></p>
-
-<p>Šajā piemērā potenciometra vērtību nolasa uz analogā kontakta A0 
-    ar nolūku ģenerēt citu signālu uz digitālā kontakta 9,
-    kas iespaido LED lampiņas spīdēšanu. Cerams, tā mainās vienmērīgāk nekā tad, ja 
-    spriegumu maina tieši ar potenciometru.</p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/PulseWidthModulation">LED+potenciometra ķēdes pieslēgšana PWM</a></li>
-</ul>
-
-
-
 <h1>2025-04-02</h1>
 
-<p><b>7 posmu LED displejs</b></p>
-
-<p>Elektroniskas ierīces bieži rāda ugunīgus cipariņus. Vienkāršs displeja veids ir 
-    7 posmu LED displejs, kurā no 7 gaismas diodēm izveidots "astoņnieks", kurā ieslēdzot 
-    vai izslēdzot dažus posmus var uzzīmēt visus ciparus no 0 līdz 9. 
-    Mūsu komplektā ir LED displeji, kuriem ir "kopīgais katods" (*common cathode*), 
-    t.i. vidējās kājiņas augšā un apakšā pārstāv "zemi" jeb katodu jeb **GND** kontaktu. 
-    Visas pārējās kājiņas pieslēdzas katram no 7 posmiņiem (ir vēl arī astotais posmiņš, 
-    kas ir "DP" - "decimālais punkts"). Vienam LED cipariņam pietiek ar vienu rezistoru,
-    kuru loģiski uzlikt uz katoda, jo visa strāva plūst caur šo katodu. 
-</p>
 
 <ul>
-<li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/LedDisplay5161AS/DisplayDigitPlain">Viens LED displeja cipars</a></li>
-</ul>
-
-
-<p><b>Multipleksēšana</b></p>
-
-<p>Iepriekšējā piemērā redzējām, ka viens LED cipariņš aizņem 8+1=9 kontaktus no 
-    Arduino plates. Divu cipariņu attēlošana prasītu jau 9+9 = 18 kontaktus. 
-    Bet Arduino platei nemaz nav tik daudz kontaktu. 
-    Lai zīmētu skaitlīšus uz diviem LED cipariņiem, jāizmanto triks, ko sauc 
-    par "multipleksēšanu". T.i. Arduino kontrolieris ļoti ātri pārslēdzas 
-    starp abiem cipariņiem - reizēm viņš zīmē vienu cipariņu, reizēm - otru. 
-    Pārslēgšanās starplaikos cilvēks nepamana, ka attiecīgais cipariņš tiek atslēgts, 
-    jo katram cipariņam ļoti bieži sūta atjauninājumus.
-</p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/LedDisplay5161AS/MultiplexingDisplays">Divi (multipleksēti) LED displeja cipari</a></li>
+    <li></li>
 </ul>
     
 <p><b>Pulsa platuma modulēšana (PWM - Pulse Width Modulation)</b></p>
@@ -209,15 +200,7 @@ ievades un izvades moduļi.</p>
     
 <p><b>Motora grozīšana</b></p>
 
-<p>Panākt, lai servo motors dara to, ko vajag, nav ļoti vienkārši. Tas saprot komandas, ko 
-    padod no kāds no PWM kontaktiem (3., 5., 6., 9., 10., 11. kontakts jeb "pin"). 
-    Atļautās komandas ir veseli skaitļi intervālā $[0;180]$. "Neitrālais" stāvoklis ir $90$, 
-    visi leņķi, kas mazāki par $90$ ir motors pagriezies par kaut kādu leņķi 
-    pretēji pulksteņa rādītājiem; leņķi, kas lielāki par $90$ ir motors pagriezies par 
-    leņķi pulksteņa rādītāju virzienā. Lai labāk saprastu, kā motors kārtējā solī griežas, 
-    piedāvājam uzdevumu, kurš groza servo motoru (līdzīgi kā robotu mašīnītes stūri) 
-    par 10 grādiem uz vienu un otru pusi. Un attēlo ar diodes gaismiņu, kurš no četriem
-    griezieniem pašlaik notiek. 
+<p> 
 </p>
 
 <ul>
@@ -243,7 +226,7 @@ ievades un izvades moduļi.</p>
 </ul>
 
 
-<h1>2025-04-09</h1>
+<h1>2025-04-16</h1>
 
 <p><b>Cilvēka reakcijas ātruma mērītājs</b></p>
 
@@ -267,3 +250,11 @@ ievades un izvades moduļi.</p>
 
 </html>
 
+
+<h1>2025-04-23</h1>
+
+<p>Lēni dziestoša LED gaismiņa</p>
+
+<p>Pogas klikšķu svārstību nogludināšana</p>
+
+<p>Čūska uz 8x8 LED matricas</p>

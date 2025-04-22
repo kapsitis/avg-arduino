@@ -1,13 +1,19 @@
-# 2 LED cipariņi ar multipleksēšanu
+# Divi LED cipariņi ar multipleksēšanu
 
-Lai varētu zīmēt skaitļus (piemēram, visus skaitļus no "00" līdz "99")
-uz divu LED diožu ekrāna, abus cipariņus nevar pieslēgt Arduino kontrolierim 
-pa taisno. Katram no cipariņiem ir 10 kājiņas; katrai vajadzētu kādu 
-diskrēto kontaktu. Bet mums ir tikai kontakti no 0. līdz 13. (pavisam 14 kontakti). 
+Piemērā [Viens LED displeja cipars](../LedDisplay5161AS/DisplayDigitPlain) 
+redzējām, ka LED cipariņa kontrolei vajag 8 vai 9 kontaktus no 
+Arduino plates (atkarībā no tā, vai vajag izmantot decimālo punktu). 
+Divu cipariņu attēlošana prasītu jau 9+9 = 18 kontaktus, 
+bet Arduino platei nemaz nav tik daudz diskrēto kontaktu
+(diskrētie kontaktu ir pavisam 14, tie sanumurēti ar skaitļiem no 
+0 līdz 13).
 
-Lai ar Arduino kontrolētu lielāku skaitu cipariņu (tsk. kalkulatoros vai 
-līdzīgos lietojumos), jāizmanto multipleksēšana. 
-(Šī ideja parādījās arī agrīnajās televīzijas tehnoloģijās - kurās viens un tas
+Lai zīmētu skaitlīšus uz diviem LED cipariņiem, jāizmanto triks, ko sauc 
+par "multipleksēšanu". T.i. Arduino kontrolieris ļoti ātri pārslēdzas 
+starp abiem cipariņiem - reizēm viņš zīmē vienu cipariņu, reizēm - otru. 
+Pārslēgšanās starplaikos cilvēks nepamana, ka attiecīgais cipariņš tiek atslēgts, 
+jo katram cipariņam ļoti bieži sūta atjauninājumus.
+(Multipleksēšana parādījās arī agrīnajās televīzijas tehnoloģijās - kurās viens un tas
 pats kineskops ar elektronu plūsmu "zīmēja" punktus uz televizora ekrāna, ļoti 
 strauji skrienot pa visām rindiņām.)
 
@@ -31,11 +37,14 @@ posma kājiņas arī būs 5 voltu spriegums
 (nav spriegumu starpības), vai nu arī uz šīs kājiņas būs 0 volti (bet tad diode 
 arī nespīdēs, jo būs ieslēgta nepareizā virzienā). 
 
+
+## Veselo skaitļu dalīšana un atlikumi
+
 Pievērsiet uzmanību šim trikam programmiņā:
 
 ```
-          displayNumber(k / 10, 12);
-          displayNumber(k % 10, 13);
+displayNumber(k / 10, 12);
+displayNumber(k % 10, 13);
 ```
 
 Ja "k" ir skaitlis robežās no 0 līdz 99, tad "k%10" (atlikums, dalot ar 10) ir 
