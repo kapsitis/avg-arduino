@@ -160,102 +160,109 @@ ievades un izvades moduļi.</p>
         <td>Veselo skaitļu dalīšana un atlikumi</td>
     </tr>
 
+    <tr>
+        <td>3.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/PWMwithGammaCorrection">LED diode, kas izdziest (ar Gamma korekciju)</a>
+        </td>
+        <td>Pulsa platuma modulācija</td>
+        <td>Skaitļu pakāpes valodā C++</td>
+    </tr>
+
+    <tr>
+        <td>3.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/SG90_9G_Micro_Servo/PositionSequence">Motora 4 griezieni ar gaismiņām</a>
+        </td>
+        <td>Pulsa platuma modulācija</td>
+        <td>Leņķiskais ātrums</td>
+    </tr>
+
+    <tr>
+        <td>3.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/SG90_9G_Micro_Servo/TurningByPotentiometer">Motora griezieni ar potenciometru</a>
+        </td>
+        <td>Pulsa platuma modulācija</td>
+        <td>Leņķiskais ātrums</td>
+    </tr>
+
+    <tr>
+        <td>4.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/AndGate">Loģiskā AND (UN) ķēde ar pogām vai tranzistoriem</a>
+        </td>
+        <td>Tranzistori</td>
+        <td>Būla AND operācija</td>
+    </tr>
+
+    <tr>
+        <td>4.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/OrGate">Loģiskā OR (VAI) ķēde ar pogām vai tranzistoriem</a>
+        </td>
+        <td>Tranzistori</td>
+        <td>Būla OR operācija</td>
+    </tr>
+
+    <tr>
+        <td>4.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/NotGate">Loģiskā NOT ķēde ar pogu vai tranzistoru</a>
+        </td>
+        <td>Tranzistori</td>
+        <td>Būla NOT operācija</td>
+    </tr>
+
+    <tr>
+        <td>4.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/SRlatch">SR Trigeris</a>
+        </td>
+        <td>Operatīvā atmiņa</td>
+        <td>Nav</td>
+    </tr>
+
+
+    <tr>
+        <td>5.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/16ButtonKeypad/ReactionMeasurement">Cilvēka reakcijas ātruma mērītājs</a>
+        </td>
+        <td>Arduino iebūvētie Pull-up rezistori</td>
+        <td>Nav</td>
+    </tr>
+
+
+    <tr>
+        <td>5.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/NandGate">Loģiskā NAND ķēde ar 2 tranzistoriem</a>
+        </td>
+        <td>Tranzistori</td>
+        <td>Loģiskā NAND operācija</td>
+    </tr>
+
+    <tr>
+        <td>5.nodarbība</td>
+        <td>
+            <a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/Oscillator">Oscilators ar 2 tranzistoriem</a>
+        </td>
+        <td>Tranzistori, kondensatori</td>
+        <td>Svārstību frekvence</td>
+    </tr>
+
 </table>
 
 
 
-
-
-<h1>2025-04-02</h1>
-
-
-<ul>
-    <li></li>
-</ul>
-    
-<p><b>Pulsa platuma modulēšana (PWM - Pulse Width Modulation)</b></p>
-
-<p><img src="PWMpins.png" width="300px"/></p>
-
-<p>Arduino plate var nolasīt "analogu" signālu (piemēram, potenciometra vērtību - jebkuru 
-    skaitli intervālā $[0;1023]$). Diemžēl, Arduino plate nevar izvadīt analogu signālu; 
-    vienīgā iespēja ir ļoti ātri pārslēgt starp spriegumiem HIGH (5 volti) un LOW (0 volti). 
-    Uz plates neeksistē nekāds "digitālais-uz-analogo" pārveidotājs. 
-
-    Tie kontakti, kuri spēj ļoti strauji raustīt spriegumu, ir 3., 5., 6., 9., 10., 11. kontakts. 
-    (Tie ir apzīmēti ar mazu vilnīti uz Arduino plates.)
-    Daudzām elektriskām iekārtām (diodēm, elektromotoriem) patīk saņemt šādu raustīgu 
-    spriegumu. Diode var sākt spīdēt mazāk intensīvi. Motors var saņemt leņķi, par kuru pagriezties. 
-</p>
-
-<p>Šis attēls parāda, kā izskatās PWM izvade (kā diskrēts kontakts, kuram ir tikai 
-    divi stāvokļi HIGH un LOW var izvadīt analogu signālu (teiksim, jebkuru skaitli starp 0 un 255):</p>
-
-<p><img src="pwm.png" width="300px"/></p>
-
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/PotentiometerHW233/PWMwithGammaCorrection">LED diode, kas izdziest (ar Gamma korekciju)</a></li>
-</ul>
-    
-<p><b>Motora grozīšana</b></p>
-
-<p> 
-</p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/SG90_9G_Micro_Servo/PositionSequence">Motora 4 griezieni ar gaismiņām</a></li>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/SG90_9G_Micro_Servo/TurningByPotentiometer">Motora griezieni ar potenciometru</a></li>
-</ul>
-
-
-<h1>2025-04-09</h1>
-
-<p><b>Transistori un Būla loģika</b></p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/AndGate">Loģiskā AND (UN) ķēde ar pogām vai tranzistoriem</a></li>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/OrGate">Loģiskā OR (VAI) ķēde ar pogām vai tranzistoriem</a></li>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/NotGate">Loģiskā NOT ķēde ar pogu vai tranzistoru</a></li>
-</ul>
-
-<p><b>Ķēdes ieslēgšana ar citu ķēdi, SR trigeris</b></p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/SRlatch">SR Trigeris</a></li>
-</ul>
-
-
-<h1>2025-04-16</h1>
-
-<p><b>Cilvēka reakcijas ātruma mērītājs</b></p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/16ButtonKeypad/ReactionMeasurement">Cilvēka reakcijas ātruma mērītājs</a></li>
-</ul>
-
-
-<p>Loģiskā NAND ķēde</p>
-
-<ul>
-<li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/NandGate">Loģiskā NAND ķēde ar 2 tranzistoriem</a></li>
-</ul>
-
-<p>Oscilators</p>
-
-<ul>
-    <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/Transistor2N3904/Oscillator">Oscilators ar 2 tranzistoriem</a></li>
-    </ul>
-    
-
-</html>
-
-
 <h1>2025-04-23</h1>
 
-<p>Lēni dziestoša LED gaismiņa</p>
+<p>Dažādas skaņas ar dūcēju</p>
 
-<p>Pogas klikšķu svārstību nogludināšana</p>
+<p>Elektrisko sprakšķu nogludināšana</p>
+
+<p>Čūska uz 8x8 LED matricas</p>
 
 <p>Šaha iekrāsojums</p>
 
@@ -263,4 +270,5 @@ ievades un izvades moduļi.</p>
     <li><a href="https://github.com/kapsitis/avg-arduino/tree/main/sandbox/KalvisA/LedMatrixMAX7219/Chessboard">Šaha iekrāsojums uz 8x8 matricas</a></li>
 </ul>
 
-<p>Čūska uz 8x8 LED matricas</p>
+
+</html>

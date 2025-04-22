@@ -53,3 +53,25 @@ Elektriskā shēma:
 Maketēšanas plates attēls:
 
 ![](PWMwithGammaCorrection_bb.png)
+
+
+## Pulsa platuma modulēšana (PWM - Pulse Width Modulation)
+
+![](PWMpins.png)
+
+Arduino plate var nolasīt "analogu" signālu (piemēram, potenciometra vērtību - jebkuru 
+skaitli intervālā $[0;1023]$). Diemžēl, Arduino plate nevar izvadīt analogu signālu; 
+vienīgā iespēja ir ļoti ātri pārslēgt starp spriegumiem HIGH (5 volti) un LOW (0 volti). 
+Uz plates neeksistē nekāds "digitālais-uz-analogo" pārveidotājs. 
+
+Tie kontakti, kuri spēj ļoti strauji raustīt spriegumu, ir 3., 5., 6., 9., 10., 11. kontakts. 
+(Tie ir apzīmēti ar mazu vilnīti uz Arduino plates.)
+Daudzām elektriskām iekārtām (diodēm, elektromotoriem) patīk saņemt šādu raustīgu 
+spriegumu. Diode var sākt spīdēt mazāk intensīvi. Motors var saņemt leņķi, par kuru pagriezties. 
+
+
+Šis attēls parāda, kā izskatās PWM izvade (kā diskrēts kontakts, 
+kuram ir tikai divi stāvokļi HIGH un LOW var izvadīt analogu signālu 
+(teiksim, jebkuru skaitli starp 0 un 255):
+
+![](pwm.png)
