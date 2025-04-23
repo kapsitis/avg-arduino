@@ -11,3 +11,4 @@ un pats modulis izdomā, kurus segmentus iezīmēt.
 Vienlaikus lietotājam ir pilna kontrole pār jebkuru no 4*14 = 56 segmentiem, 
 uz tiem var attēlot jebkuru bildi - nav obligāti jāzīmē cipariņi. 
 
+![](CounterWithAdafruit_bb.png)
