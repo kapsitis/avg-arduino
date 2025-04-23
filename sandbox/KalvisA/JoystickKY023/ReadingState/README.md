@@ -13,7 +13,7 @@ Tai vietā attēlosim kursorsviras stāvokļus ar grafiku.
 3. Uz kursorsviras (*joystick*) klikšķināt pogu un arī kustināt 
    pašu sviru horizontāli un vertikāli. 
 
-![](ReadingState_bb.pn)
+![](ReadingState_bb.png)
 
 Attēls uz *Serial Plotter*: 
 
