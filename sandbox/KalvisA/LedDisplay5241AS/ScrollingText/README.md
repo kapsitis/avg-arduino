@@ -1,6 +1,6 @@
 # Slīdošs teksts
 
-![14_segment.png] 
+![](14_segment.png)
 
 Katru no segmentiem var iekrāsot ar vienu bitu 
 ("1", ja segmentam jādeg; "0", ja jānodziest).
@@ -39,4 +39,4 @@ const uint16_t font14seg[] = {
 
 Piemēram, burts "K" parasti izskatās šādi: 
 
-![letter_k.png]
+![](letter_k.png)
