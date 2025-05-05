@@ -2,6 +2,7 @@
 
 ## Direktorija 01
 
+```
 Disc 5 - 01 - Kads mani atkal sauc uz satiksanos.ogg
 Disc 5 - 02 - Ievads.ogg
 Disc 5 - 03 - Dziesmu gramata Vecamate.ogg
@@ -49,10 +50,11 @@ Disc 5 - 44 - Ja tu zini kads ir gaujas alts.ogg
 Disc 5 - 45 - Skabargas.ogg
 Disc 5 - 46 - Skirsanas.ogg
 Disc 5 - 47 - Ja man raditu celu.ogg
-
+```
 
 ## Direktorija 02
 
+```
 Disc 6 - 01 - Kad graudu samal miltos.ogg
 Disc 6 - 02 - Tikai.ogg
 Disc 6 - 03 - Salna.ogg
@@ -103,7 +105,7 @@ Disc 6 - 47 - Zvans sev sit pie krutim.ogg
 Disc 6 - 48 - Caks I.ogg
 Disc 6 - 49 - Caks II.ogg
 Disc 6 - 50 - Talismans.ogg
-
+```
 
 ## Direktorija 03
 
