@@ -31,14 +31,18 @@ Katrā direktorijā ir atļauti līdz 255 treki, kas sanumurēti no "0001.mp3"
 ar četrciparu numuriem. Šādā situācijā direktorijas un treka numuru 
 nosaka divi nelieli skaitlīši. 
 
+![](dfplayer_library.png)
+
 Lai varētu kontrolēt MP3 atskaņotāju, veiciet sekojošas darbības: 
 
 1. Saslēdziet shēmu un pārliecinieties, ka MP3 atskaņotājā ievietota mikro SD karte.
    Izmantojiet $1~k\Omega$ rezistorus (nokrāsoti sarkani).
-2. Aizsūtiet uz Arduino kontrolieri skriptu "PlayingMP3.ino". 
-3. Ieslēdziet Arduino IDE seriālo monitoru (**Tools** > **Serial Monitor**).
-4. Izvēlieties kādu disku un treku (sk. sarakstu [songs.md](songs.md)).
-5. Varat mikro SD kartei pievienot arī jaunus MP3 failus (tos var ierakstīt
+2. Atvērt **Tools** > **Library Manager**, ierakstīt meklēšanas lodziņā 
+   Dfplayer un izvēlēties instalēt to bibliotēku, kuras autors ir DFRobot (sk. attēlu augstāk).
+3. Aizsūtiet uz Arduino kontrolieri skriptu "PlayingMP3.ino". 
+4. Ieslēdziet Arduino IDE seriālo monitoru (**Tools** > **Serial Monitor**).
+5. Izvēlieties kādu disku un treku (sk. sarakstu [songs.md](songs.md)).
+6. Varat mikro SD kartei pievienot arī jaunus MP3 failus (tos var ierakstīt
    ar [Voice Recorder](https://play.google.com/store/apps/details?id=com.media.bestrecorder.audiorecorder) vai līdzīgu Android aplikāciju. Tiem var izveidot 
    atsevišķu direktoriju, piemēram "05" vai "06" (jo 01...04 ir aizņemtas).
 
