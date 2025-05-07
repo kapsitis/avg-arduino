@@ -12,7 +12,7 @@
 // One more thing: https://youtu.be/jyQQi-ay8cs?si=geeS8Glqh3fiJ-cy
 
 // Initialize software serial on pins 10 and 11
-SoftwareSerial mySoftwareSerial(2, 3);  // RX, TX
+SoftwareSerial mySoftwareSerial(10, 11);  // RX, TX
 DFRobotDFPlayerMini myDFPlayer;
 String line;
 char command;
