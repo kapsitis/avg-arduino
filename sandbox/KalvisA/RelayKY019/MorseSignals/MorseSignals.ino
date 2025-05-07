@@ -6,7 +6,7 @@ void setup() {
 
 void loop() {
   displayMorseCode("PARIS");
-  delay(700);  // Delay between word repetition (7 units of dot length)
+  delay(7000);  // Delay between word repetition (7 units of dot length)
 }
 
 void displayMorseCode(String text) {
