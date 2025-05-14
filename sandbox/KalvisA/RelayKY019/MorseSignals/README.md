@@ -27,21 +27,6 @@ tad relejs saslēdz kontaktu ar
 
 
 
-## Elektromagnētiskais relejs
-
-Relejs ir slēdzis. Par "releju" (*relay*) tradicionālajā angļu valodā sauca 
-stafetes skrējienu. Relejs elektrotehnikā ir slēdzis - parasti tāds slēdzis, 
-kur ar vāju strāvas stiprumu (piemēram 5V strāvu no Arduino) 
-var ieslēgt vai izslēgt stiprāku strāvu (piemēram 200V maiņstrāvu kādam ārējam 
-strāvas patērētājam). 
-
-Elektromagnētisms nodrošina to, ka relejs spēj pievilkt klāt slēdža sviru. 
-Slēdža pārslēgšanos uz vienu vai otru pusi var dzirdēt kā klusu tikšķi.
-
-* Ja elektromagnēta spolei strāva nav pieslēgta (**Input** ir 0V jeb LOW), labajā pusē noslēdzas 
-  ķēde starp **Contact** un **Normally close (NC)**. 
-* Ja elektromagnēta spolei strāva ir pieslēgta (**Input** ir 5V jeb HIGH), labajā 
-  pusē noslēdzas ķēde starp **Contact** un **Normally Open**. 
 
 
 ![](relay.png)

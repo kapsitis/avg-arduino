@@ -11,10 +11,34 @@ nākamo blakus rūtiņu (ar vienādām varbūtībām uz augšu, uz leju, pa labi
 un pārvietojas uz turieni. Čūskas "astei" toties pēdējā LED lampiņa nodziest, lai čūskas
 garums nemainītos. 
 
+## Arduino kontroliera pārstartēšana
+
 Čūska nevar iziet ārpus 8x8 matricas un arī nevar pati sevi krustot. Ja čūskai 
 iegadās komanda uz turieni doties, viņa šo gājienu izlaiž.
 Pēc kāda laika čūskas galva neizbēgami nonāk kādā no stūriem un vairs nevar izkļūt
 no stūra, jo abas kaimiņu rūtiņas stūrim aizņem pašas čūskas ķermenis. 
+Ja čūska iestrēgst kādā stūrī, to var palaist atkal, nospiežot **Reset** podziņu 
+uz Arduino kontroliera -- tas uzsāk skriptu atkal no jauna.
+
+
+## Animāciju programmēšana
+
+Regulārus laika intervālus animācijās var panākt, izmantojot pašreizējā laika iegūšanas 
+funkciju `millis()` (nevis `delay(...)`), jo mērķis NAV noteiktu laiku neko nedarīt - 
+kas var novest pie nevienmērīgas kustības, ja Arduino ir noslogots. , 
+Animācijas mērķis ir nodrošināt to, lai pēc atļautā laika (piemēram, ik pēc 200 milisekundēm) 
+čūska nejauši pārvietotos. Gaidīšanu nodrošina sekojošs koda gabals cikla sākumā: 
+
+```
+void loop() {
+    unsigned long now = millis();
+    if (now - lastMoveTime < interval)
+        return;
+    lastMoveTime = now;
+    // pārējā daļa galvenajam ciklam "loop()"
+}
+```
+
 
 ## Uzdevumi 
 
