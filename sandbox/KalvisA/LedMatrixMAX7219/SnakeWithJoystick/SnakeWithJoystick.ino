@@ -21,6 +21,7 @@ const unsigned long interval = 200; // ms per step
 int lastDirection = -1;
 
 void setup() {
+  Serial.begin(9600); 
   lc.shutdown(0, false);    // Wake up MAX7219
   lc.setIntensity(0, 8);    // Brightness 0-15
   lc.clearDisplay(0);       // Clear display  
@@ -31,11 +32,18 @@ void loop() {
   unsigned long now = millis();
   if (now - lastMoveTime < interval) return;
 
+
+
   lastMoveTime = now;
 
   // Read Joystick
   int X = analogRead(JOY_X);
   int Y = analogRead(JOY_Y);
+
+
+    Serial.print(X);
+    Serial.print(",");
+    Serial.println(Y);
 
   int direction = -1;
 
