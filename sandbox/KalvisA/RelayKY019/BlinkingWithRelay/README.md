@@ -50,3 +50,6 @@ Slēdža pārslēgšanos uz vienu vai otru pusi var dzirdēt kā klusu tikšķi.
   ķēde starp **Contact** un **Normally close (NC)**. 
 * Ja elektromagnēta spolei strāva ir pieslēgta (**Input** ir 5V jeb HIGH), labajā 
   pusē noslēdzas ķēde starp **Contact** un **Normally Open (NO)**. 
+
+
+![](relay.png)

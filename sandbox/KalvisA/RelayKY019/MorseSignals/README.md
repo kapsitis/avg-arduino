@@ -25,13 +25,6 @@ tad relejs saslēdz kontaktu ar
 ![](MorseSignals_bb.png)
 
 
-
-
-
-
-![](relay.png)
-
-
 ## Morzes kodējums
 
 ![Morzes kodi latīņu burtiem](https://en.wikipedia.org/wiki/Morse_code).
