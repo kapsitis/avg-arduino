@@ -23,7 +23,16 @@ atvērt **Tools** > **Serial Monitor**.
 
 ## Uzdevumi
 
-1. Pievienot shēmai kādu interesantāku izvadi - piemēram, 
+1. Programmas pašā augšā izveidot skaitītāju (`int count = 0;`), 
+   kuru palielina ikreiz, kad ultraskaņas sensors nomērījis 
+   attālumu, kas nepārsniedz 10 centimetrus. Izvadīt šī skaitītāja 
+   vērtību blakus sensora nomērītajai vērtībai. 
+   (Var arī nedaudz sarežģītāku šī uzdevuma variantu: Tos gadījumus, 
+   kad roka uzkavējas ilgi sensora tuvumā, ieskaitīt tikai vienreiz. 
+   Lai to izdarītu, jāatceras divas iepriekšējās sensora vērtības; 
+   skaitītāju palielina tikai tad, ja roka pirms 500 milisekundēm bija ārpus 10 centimetru 
+   zonas un tikai tagad iegāja 10 centimetru zonā.)
+2. Pievienot shēmai kādu interesantāku izvadi - piemēram, 
    Passive Buzzer (dūcēju), kas ieslēdzas tad, ja Ultraskaņas 
    sensora nomērītais attālums ir starp $1~\text{cm}$ un $50~\text{cm}$. 
    Un izvadītā frekvence uz dūcēja ir apgriezti proporcionāla attālumam. 
