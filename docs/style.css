@@ -15,3 +15,7 @@ table th {
     background-color: #cccccc;
 }
 
+th, td {
+    padding: 5px;
+}
+
