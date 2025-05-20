@@ -38,4 +38,5 @@ spriegums būs reizēm 3.3V (precīzāk, divas trešdaļas no 5V), bet dažreiz 
 4. Atvērt *Serial Bluetooth Terminal* izvēlnē **Devices** > **Bluetooth LE**. 
    Atrast tur kādu ierīci, kuras nosaukumā ir HC-05 vai HC-06 un nospiest *Connect*. 
 5. Sūtīt no Android ierīces tekstu un spiest uz bultiņas. 
-6. Pārliecināties, ka Arduino IDE šo pašu tekstu izvada uz seriālā porta. 
+6. Pārliecināties, ka Arduino IDE šo pašu tekstu izvada uz seriālā porta.
+
