@@ -25,3 +25,29 @@ Ja **Gain** ir par lielu vai par mazu, kontaktu **Gain** var pārspraust.
 ![](FrequencyGoertzel_bb.png)
 
 
+## Gercela algoritms
+
+TBD
+
+
+
+
+## DTMF (Dual Tone Multi Frequency)
+
+[Toņu ģenerators tiešsaistē](https://onlinetonegenerator.com/dtmf.html)
+
+Lai telefonā ievadītu pareizo numuru, var izmantot elektronikas metodes.
+Seno laiku telefonos bija rotors, kas ģenerēja elektrības pulsus vajadzīgajā 
+skaitā. Bet lietotājiem bija jāgaida, kamēr rotors atgriezīsies sākumstāvoklī; 
+ja numurā bija jāuzgriež cipars "0" (visgarākais - 10 pulsi), tad tas varēja 
+aizņemt vairākas sekundes. Tāpēc lielu popularitāti iemantoja 
+"touch tone phones" (pieskaršanās telefoni), kuri katrai telefona tastatūras 
+pogai ģenerēja skaņu, kurā saliktas kopā divas frekvences. 
+Frekvences bija īpaši piemeklētas tā, lai cilvēks tās varētu dzirdēt, bet tās 
+nelīdzinātos dabā sastopamiem trokšņiem vai fona mūzikai, 
+kas varētu izjaukt numura ievadīšanu. 
+
+
+
+
+
