@@ -20,13 +20,6 @@ void offAll() {
   for(int i=0;i<3;i++) pinMode(pins[i],INPUT);
 }
 
-// void offAll() {
-//   for(int i=0;i<3;i++) {
-//     pinMode(pins[i], OUTPUT);
-//     digitalWrite(pins[i], LOW);
-//   }
-// }
-
 void loop() {
   for(int i=0;i<6;i++) {
     offAll();
