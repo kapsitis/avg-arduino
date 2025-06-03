@@ -11,4 +11,6 @@ vajadzīgs LED un 220 omu rezistors.
 Šajā attēlā redzams, kā saslēgt divas diodes. Tās iedegsies, 
 ja lietotājs nospiedīs attiecīgi pogas **S1** un **S6**. 
 
-![](TurningOnLeds.png)
+**Maketēšanas shēma:**
+
+![](TurningOnLeds_bb.png)

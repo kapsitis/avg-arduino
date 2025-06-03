@@ -31,8 +31,12 @@ tad drīkst padot arī mazāku spriegumu, neriskējot nodedzināt LED diodi.
 
 ## Uzdevumi
 
-1. Pārbaudīt, kāds ir spriegums, ja pieslēdz paralēli vairākas dažādu krāsu 
-   LED lampiņas. Pēc teorijas vajadzētu būt tā, ka pirmā iedegas sarkanā 
+1. Pārbaudīt sprieguma izmaiņas starp **GND** un **OTA** ar multimetru 
+   (ieslēgt to 20 voltu diapazonā). 
+2. Pārbaudīt, pie kāda sprieguma iedegas dažādu krāsu LED, ja tās 
+   saslēgtas paralēli (kā zīmējumā). Nosakām to spriegumu, pie kura LED lampiņa 
+   iedegas kaut vai ļoti blāvi.
+   Pēc teorijas vajadzētu būt tā, ka pirmā (pie viszemākā sprieguma) iedegas sarkanā 
    lampiņa, tad oranžā, tad dzeltenā, tad zaļā un visbeidzot zilā. 
 
 *Piezīme:* Tā kā lampiņas saslēgtas paralēli, tad uz tām visām ir vienāds spriegums - 
