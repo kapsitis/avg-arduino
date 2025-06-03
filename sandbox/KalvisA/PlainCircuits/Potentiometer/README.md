@@ -1,17 +1,50 @@
-# Maiņrezistors
+# LED ķēde ar potenciometru
 
-Maiņrezistors (arī saukts potenciometrs vai reostats) ir ierīce, kas māk 
-mainīt spriegumu - tā ir iebūvēta dažādu elektronisku ierīču regulējamās pogās. 
-Ir tādi potenciometri, kuri maina spriegumu, ja tos pagriež, bet mūsu komplektā ir 
-vieglāk lietojams potenciometrs, kam ir slīdošs regulators. 
-Ja abus potenciometra galus (**GND** un **VCC**) pieslēdz attiecīgi pie 
-0V un 5V, tad kontrolējamais spriegums 
-uz **OTA** (sprieguma starpība starp **OTA** un **GND**) var mainīties 
-intervālā $[0;5]$. 
+Šajā vingrinājumā pieslēdzam potenciometru, lai varētu mainīt 
+spriegumu, kuru saņem LED diodes un $220~\Omega$ rezistora ķēde.
+
+**Maketēšanas shēma:**
+
+![](Potentiometer_bb.png)
+
+**Elektriskā shēma:** 
+
+![](Potentiometer_schem.png)
+
+
+## Potenciometrs
+
+Potenciometrs ir ierīce, ko lieto diviem mērķiem:
+
+* Kā mainīgas pretestības rezistoru (ja tam pieslēdz tikai 2 kontaktus).
+  Mūsu komplektā esošais potenciometrs māk mainīt pretestību no 
+  $0~\Omega$ līdz $10000~\Omega$ (10,000 omi jeb $10$ kiloomi).  
+* Kā ierīci sprieguma mainīšanai (ja tam pieslēdz visus 3 kontaktus). 
+  Šajā gadījumā spriegums starp **GND** un **5V** kontaktiem 
+  vienmēr ir $5~\text{V}$, bet spriegums uz trešā kontakta **OTA** vai **OTB**
+  (sprieguma starpība starp **OTA** un **GND**) 
+  var būt jebkāda no $0~\text{V}$ līdz $5~\text{V}$ (starp 0 un 5 voltiem).
 
 Šajā vingrinājumā var saslēgt LED un rezistoru virknē un 
 mainīt uz tiem spriegumu. Tā kā ķēde bija aprēķināta 5V (maksimālajam spriegumam), 
-tad arī jebkuru mazāku spriegumu drīkst padot. 
+tad drīkst padot arī mazāku spriegumu, neriskējot nodedzināt LED diodi. 
+
+## Uzdevumi
+
+1. Pārbaudīt, kāds ir spriegums, ja pieslēdz paralēli vairākas dažādu krāsu 
+   LED lampiņas. Pēc teorijas vajadzētu būt tā, ka pirmā iedegas sarkanā 
+   lampiņa, tad oranžā, tad dzeltenā, tad zaļā un visbeidzot zilā. 
+
+*Piezīme:* Tā kā lampiņas saslēgtas paralēli, tad uz tām visām ir vienāds spriegums - 
+un tās var būt virknē ar vienu rezistoru, kurš tām visām ir kopīgs. 
+Var, protams, izmantot arī katrai LED lampiņai atsevišķu rezistoru. 
+
+**Maketēšanas shēma:**
+
+![](Potentiometer_multiple_LED_bb.png)
+
+**Elektriskā shēma:** 
+
+![](Potentiometer_multiple_LED_schem.png)
 
 
-![](Potentiometer.png)

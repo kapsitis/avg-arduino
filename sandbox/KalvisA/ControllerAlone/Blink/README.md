@@ -1,10 +1,11 @@
 # Mirkšķināšana
 
 Vienkārša Arduino programmiņa ieslēdz un izslēdz spriegumu uz 13.kontakta. 
-Diskrētā izeja nr.13 ir pieslēgta arī LED gaismiņai uz pašas plates.
-To var mirkšķināt vienu pašu bez nekādām ārējām elektriskām ķēdēm.
-13.kontakts mirkšķina LED diodi uz plates (kura tieši saslēgta ar 13.kontaktu), 
-gan arī ārēju diodi. 
+13.kontakts ir *digitāls*, jo tas vienmēr strādā ar 
+divām sprieguma vērtībām $0~\text{V}$ un $5~\text{V}$. 
+13.kontakts mirkšķina arī mazu LED diodi uz pašas Arduino plates (var 
+redzēt mirkšķināšanu), bet 
+tam var pieslēgt arī ārēju LED diodi. 
 
 Drusku uzskatāmāku šo pašu eksperimentu var padarīt, pievienojot 
 ārēju LED diodi (tāpat kā iepriekš - kopā ar rezistoru saslēgtu virknē). 
