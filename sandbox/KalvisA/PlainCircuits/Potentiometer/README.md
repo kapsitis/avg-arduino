@@ -3,11 +3,11 @@
 Šajā vingrinājumā pieslēdzam potenciometru, lai varētu mainīt 
 spriegumu, kuru saņem LED diodes un $220~\Omega$ rezistora ķēde.
 
-**Maketēšanas shēma:**
+**Viena LED lampiņa ar potenciometru: Maketēšanas shēma:**
 
 ![](Potentiometer_bb.png)
 
-**Elektriskā shēma:** 
+**Viena LED lampiņa ar potenciometru: Elektriskā shēma:** 
 
 ![](Potentiometer_schem.png)
 
@@ -33,22 +33,27 @@ tad drīkst padot arī mazāku spriegumu, neriskējot nodedzināt LED diodi.
 
 1. Pārbaudīt sprieguma izmaiņas starp **GND** un **OTA** ar multimetru 
    (ieslēgt to 20 voltu diapazonā). 
-2. Pārbaudīt, pie kāda sprieguma iedegas dažādu krāsu LED, ja tās 
-   saslēgtas paralēli (kā zīmējumā). Nosakām to spriegumu, pie kura LED lampiņa 
-   iedegas kaut vai ļoti blāvi.
-   Pēc teorijas vajadzētu būt tā, ka pirmā (pie viszemākā sprieguma) iedegas sarkanā 
-   lampiņa, tad oranžā, tad dzeltenā, tad zaļā un visbeidzot zilā. 
+2. Pārbaudīt, pie kāda sprieguma iedegas dažādu krāsu LED. 
+   Katras krāsas LED ieslēgt sākotnējā ķēdē. Vispirms ar potenciometru (pārbīdot 
+   regulatoru uz maksimumu)
+   pārbauda, vai diode ieslēgta pareizi. Pēc tam spriegumu lēnām kāpina no nulles 
+   līdz maksimumam un atrod to mirkli, kurā diode sāk dot nelielu, blāvu gaismu. 
+   Šo sprieguma vērtību pieraksta.
+   Pēc teorijas vajadzētu būt tā, ka sarkanā diode iedegas pie viszemākā sprieguma 
+   (ap $1.7~\text{V}$), bet zilā un arī baltā (caurspīdīgā) diodes iedegas pie 
+   augstāka sprieguma (ap $2.5~\text{V}$). Palielinot spriegumu, lampiņas iedegas 
+   varavīksnes krāsu secībā: Vispirms sarkanā, tad oranžā, tad dzeltenā, 
+   tad zaļā un visbeidzot zilā. 
+3. Tam pašam spriegumam paralēli pieslēdz divas LED lampiņas dažādās krāsās. 
+   Noskaidro, kurām no tām viena lampiņa (pat pie maksimāla sprieguma uz potenciometra)
+   pilnībā nomāc otru un deg viena pati, bet kuras lampiņas var degt vienlaicīgi. 
+   Divu lampiņu paralēls slēgums parādīts attēlos.
 
-*Piezīme:* Tā kā lampiņas saslēgtas paralēli, tad uz tām visām ir vienāds spriegums - 
-un tās var būt virknē ar vienu rezistoru, kurš tām visām ir kopīgs. 
-Var, protams, izmantot arī katrai LED lampiņai atsevišķu rezistoru. 
-
-**Maketēšanas shēma:**
+**Divas LED lampiņas paralēli pie potenciometra: Maketēšanas shēma**
 
 ![](Potentiometer_multiple_LED_bb.png)
 
-**Elektriskā shēma:** 
+**Divas LED lampiņas paralēli pie potenciometra: Elektriskā shēma**
 
 ![](Potentiometer_multiple_LED_schem.png)
-
 
