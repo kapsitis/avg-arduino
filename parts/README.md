@@ -27,7 +27,7 @@ Aliexpress ļauj sameklēt citus piegādātājus pēc detaļas nosaukuma.
 
 | Detaļa                              | Cena               | Pasūtīšanas saite                   | 
 | ----------------------------------- | ------------------ | ----------------------------------- |
-| Arduino Uno R3 (1x)                 | 4.29 EUR | [Arduino UNO R3 Board (CH340G, MEGA328P)](https://www.aliexpress.com/item/1005007335850929.html) |
+| Arduino Uno R3 kontrolieris (1x)    | 4.29 EUR | [Arduino UNO R3 Board (CH340G, MEGA328P)](https://www.aliexpress.com/item/1005007335850929.html) |
 | USB kabelis tips A uz tipu B (1x)   | 2.72 EUR | [100cm USB 2.0 Type A Male to B Male](https://www.aliexpress.com/item/1005007546959342.html) |
 | Maketēšanas plate (1x)              | 2.13 EUR    | [Breadboard 830 Point](https://www.aliexpress.com/item/1005008061321054.html)   |
 | Savienotājvadi (20x M-M; 20x M-F) | 0.64 EUR (par 40)  | [10cm, 20cm DuPont Line M-M and M-F](https://www.aliexpress.com/item/4000812552635.html) |
@@ -45,15 +45,15 @@ Aliexpress ļauj sameklēt citus piegādātājus pēc detaļas nosaukuma.
 | 5V relejs (1x)  | 2.00 EUR | [Electromagnetic Relay Module 5V](https://www.aliexpress.com/item/1005006000897200.html) |
 | Ultraskaņas sensors (1x)  | 1.91 EUR  | [Ultrasonic Ranging Module HC-SR04](https://www.aliexpress.com/item/1005006356823811.html) |
 | NPN tranzistori, 2N3904 (5x) | 0.88 EUR (par 100) | [100PCS 2N3904](https://www.aliexpress.com/item/1005005776290412.html) |
-| Kondensatori 10microF (2x), 100microF (2x) | 7.79 EUR (par 50) | [Non-polar aluminum electrolytic capacitor 10UF, 100UF] |
-| Micro SD karte (1x)                 | 2.69 EUR | [Mini SD Card 16GB](https://www.aliexpress.com/item/1005005748564206.html)                 |
-| 2W 8Ω 40mm skaļrunis (1x) |         | 3.18 EUR (par 5)   | [2W, 8 Ohm, 40mm Diameter Speakers](https://www.aliexpress.com/item/1005006750533007.html) |
-| DFPlayer MP3 atskaņotājs (1x)       | 2.20 EUR           | [DFPlayer Mini MP3 Player](https://www.aliexpress.com/item/1005006166747621.html)          |
+| Kondensatori 10 μF (2x), 100 μF (2x) | 7.79 EUR (par 50) | [Non-polar aluminum electrolytic capacitor 10UF, 100UF](https://www.aliexpress.com/item/1005004913280279.html) |
+| Micro SD karte (1x)  | 2.69 EUR | [Mini SD Card 16GB](https://www.aliexpress.com/item/1005005748564206.html)                  |
+| 2W 8Ω 40mm skaļrunis (1x)  | 3.18 EUR (par 5)   | [2W, 8 Ohm, 40mm Diameter Speakers](https://www.aliexpress.com/item/1005006750533007.html) |
+| DFPlayer MP3 atskaņotājs (1x)       | 2.20 EUR  | [DFPlayer Mini MP3 Player](https://www.aliexpress.com/item/1005006166747621.html) |
 | Mikrofons MAX9814 | 2.92 EUR | [MAX9814 Microphone](https://www.aliexpress.com/item/1005003123294465.html) |
 | HC-06 Bluetooth bezvadu modulis (1x) | 2.91 EUR   | [HC-06 Wireless Bluetooth Slave Module](https://www.aliexpress.com/item/1005006566406384.html)   |
-| DS1307 Pulkstenis                    | 1.30 EUR   | [I2C DS1307 Real Time Clock](https://www.aliexpress.com/item/1005006127528260.html)
+| DS1307 Pulkstenis             | 1.30 EUR   | [I2C DS1307 Real Time Clock](https://www.aliexpress.com/item/1005006127528260.html)
 | Datu reģistrators  | 2.70 EUR | [Mini Data Logger Module](https://www.aliexpress.com/item/1005006248586820.html) |
-| Plastmasas kaste ar vāku (1x)     | 3.99 EUR    | [Jysk: Uzglabāšanas kaste PRO BOX](https://www.jysk.lv/uzglabasanas-kaste-pro-box-107335-lv.html) |
+| Plastmasas kaste ar vāku (1x) | 3.99 EUR    | [Jysk: Uzglabāšanas kaste PRO BOX](https://www.jysk.lv/uzglabasanas-kaste-pro-box-107335-lv.html) |
 | Trauciņi mazām detaļām (2x) | 4.99 EUR (par 4) | [Rimi: Trauks uzglabāšanai](https://www.rimi.lv/e-veikals/lv/produkti/majai-darzam-un-atputai/virtuvei/ediena-uzglabasanai/trauks-uzglabasanai-4x1-7dl/p/7183866) | 
 
 
@@ -140,14 +140,15 @@ Arduino nav pieslēgts. Sal. [RD Electronics: CR1220 baterija](https://www.rdvei
 
 [Starter Kit for Arduino Uno R3](https://www.aliexpress.com/item/1005006295315581.html). 
 Šis komplekts ir salīdzinoši vienkāršāks (tajā arī ir Arduino Uno R3 plate un daži tipiski moduļi). 
-Tas satur sensorus dažiem izklaidējošiem eksperimentiem (ūdens sensors puķupodiem, gaisa mitruma un temperatūras 
-sensors, infrasarkanā pults ar savu sensoru, atslēgas čips, lokana ciparu tastatūra ar kalkulatoram 
-līdzīgu displeju). 
+Tas satur sensorus dažiem izklaidējošiem eksperimentiem, kādu mūsu kastītē nav 
+(ūdens sensors puķupodiem, gaisa mitruma un temperatūras 
+sensors, infrasarkanā pults ar savu sensoru, atslēgas čips, lokana ciparu tastatūra un kalkulatoram
+līdzīgs displejs).
 
 [Tenstar Starter Kit for Arduino Uno](https://www.aliexpress.com/item/1005005970564532.html).
 Līdzīgs komplekts iepriekšējam; nedaudz mazāk "jocīgu" detaļu, bet jūtami lētāks.
 
 Minētajiem komplektiem vai nu vispār nav kastītes, vai arī tā ir pārbāzta un maz 
-piemērota detaļu glabāšanai pēc izpakošanas. Ja vēlaties to lietot, tik un tā ieteicams 
-iegādāties, piemēram, Jysk kādu plastmasas glabāšanas konteineru ar vāku. 
+piemērota detaļu glabāšanai pēc to izpakošanas. Ja vēlaties to lietot, ieteicams 
+iegādāties jau augstākminēto Jysk plastmasas konteineru ar vāku. 
 
