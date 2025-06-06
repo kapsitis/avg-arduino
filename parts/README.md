@@ -39,7 +39,7 @@ Aliexpress ļauj sameklēt citus piegādātājus pēc detaļas nosaukuma.
 | 14-posmu 4-ciparu displejs (1x) | 2.13 EUR | [0.54 inch LED Display 5241AS with I2C](https://www.aliexpress.com/item/1005004090978118.html) |
 | Pasīvais dūcējs (1x) | 1.43 EUR | [Passive Buzzer Module DC 3.3-5V](https://www.aliexpress.com/item/1005004267414201.html) |
 | Kursorsvira (1x) | 1.92 EUR | [Dual-axis XY Joystick Module KY-023](https://www.aliexpress.com/item/1005007068603893.html) |
-| 8x8 LED matrica (1x) | 0.84 | [MAX7219 Dot Matrix Module](https://www.aliexpress.com/item/1005002821776653.html) | 
+| 8x8 LED matrica (1x) | 0.84 EUR | [MAX7219 Dot Matrix Module](https://www.aliexpress.com/item/1005002821776653.html) | 
 | Servo motors SG90(1x) | 2.62 EUR | [Micro Servo SG90](https://www.aliexpress.com/item/1005007173214082.html) |
 | Soļu motors ar draiveri (1x) | 2.79 EUR | [5V 4-Phase 28BYJ-48 Stepper Motor, and ULN2003 Driver](https://www.aliexpress.com/item/1005006423099252.html) |
 | 5V relejs (1x)  | 2.00 EUR | [Electromagnetic Relay Module 5V](https://www.aliexpress.com/item/1005006000897200.html) |
@@ -66,7 +66,8 @@ noderēt, jo sasaista Arduino ar reālo dzīvi.
 **Multimetrs jeb testeris:**
 Dažus vingrinājumus ir vieglāk saprast, ja var izmērīt spriegumu 
 vai, teiksim, pārbaudīt, kuras kājiņas ir vai nav kvalitatīvi 
-pielodētas (skaņas signāls, ja pastāv elektrisks kontakts).  
+pielodētas (skaņas signāls, ja pastāv elektrisks kontakts). 
+Sal. [SZ305 1999 Count Professional Multimeter](https://www.aliexpress.com/item/1005005856794725.html).
 
 
 **Krokodilīšu savienojumi multimetram:**
@@ -75,7 +76,7 @@ parocīgi elektriķu darbā, bet ir nedaudz par lielu, lai mērītu
 spriegumu starp kontaktiem uz Arduino vai maketēšanas platē. 
 Tāpēc ir pieņemts tiem piestiprināt vadiņus, izmantojot 2 knaģīšus jeb krokodilīšus, 
 kuru uzsprauž virsū multimetra kontaktiem. 
-
+Sal. [Alligator Clips](https://www.aliexpress.com/item/1005006020044834.html). 
 
 **Skrūvgriezis ar mazu krustiņu:**
 5V/220V elektromagnētiskajam relejam vadus pievieno, tos ieskrūvējot 
@@ -95,13 +96,14 @@ Vairums detaļu ir uzreiz gatavas lietošanai (kontaktus izveido ar savienotājv
 maketēšanas plati jeb *breadboard*). Tomēr dažiem moduļiem pirms lietošanas ir jāpielodē 
 kājiņas. To dara nodarbību pasniedzējs, jo tā ir vienreiz veicama darbība un 
 mācību klase var nebūt piemērota elektrībai, karstumam un dūmiem.
+Šīm detaļām vajadzīga lodēšana (sīkāk sk. augstākminēto tabulu).
 
-* 14-posmu LED displejs 5241AS: 
-* 8x8 LED matrica MAX7219: 
-* Pulkstenis DS1307: 
-* Datu reģistrators: 
-* Mikrofons MAX9814: 
-* 2W 8Ω 40mm skaļrunis (jālodē resnāki vadi, jo kājiņu šim modulim nav): 
+* 14-posmu LED displejs 5241AS. 
+* 8x8 LED matrica MAX7219.
+* Pulkstenis DS1307.
+* Datu reģistrators (Data logger). 
+* Mikrofons MAX9814. 
+* 2W 8Ω 40mm skaļrunis (jālodē resnāki vadi, jo kājiņu šim modulim nav).
 
 Kājiņas šiem moduļiem mēdz būt iepakotas kopā ar pašu detaļu. 
 Var izmantot arī Arduino Uno R3 komplektā esošās kontaktu "ķemmītes" - nolauzt 
